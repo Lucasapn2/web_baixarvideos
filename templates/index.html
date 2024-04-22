@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,9 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="icon" href="/static/favicon.ico" type="image/x-icon">
     <script src="static/js/script.js"></script>
-
-
-
 </head>
 <body>
-    <video id="video-background" autoplay muted loop>
+    <video id="video-background" autoplay muted loop playsinline>
         <source src="/static/videos_background/background-video.mp4" type="video/mp4">
     </video>
     <div id="form-container">
@@ -30,6 +27,5 @@
             <li><a href="https://github.com/Lucasapn2"><img src="static/redes_sociais/github.png" alt="logo Github" width="30px" height="30px"></a></li>
         </ul>
     </footer>
-
 </body>
 </html>
