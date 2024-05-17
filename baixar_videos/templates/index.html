@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download de Vídeo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="/static/super-mario.ico" type="image/x-icon">
+    <script src="static/js/script.js"></script>
+</head>
+<body>
+    <video id="video-background" autoplay muted loop playsinline>
+        <source src="/static/videos_background/background-video.mp4" type="video/mp4">
+    </video>
+    <div id="form-container">
+        <h1>Download de Vídeo do YouTube</h1>
+        <form id="download-form" action="/download" method="post">
+            <input type="text" name="yt_link" placeholder="Insira o link do vídeo do YouTube" required>
+            <button id="download-button" type="submit">Baixar</button>
+        </form>
+        <div id="download-message">O download foi iniciado.</div>
+    </div>
+    <footer>
+        <p>&copy; Olimpia Code</p>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/olympiacodetech/"><img src="static/redes_sociais/instagram.png" alt="logo instagram" width="30px" height="30px"></a></li>
+            <li><a href="https://github.com/Lucasapn2"><img src="static/redes_sociais/github.png" alt="logo Github" width="30px" height="30px"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
